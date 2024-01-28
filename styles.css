@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+h1 {
+  color: #f15412;
+  font-size: 7em;
+  letter-spacing: 1px;
+  margin-top: 0.7em;
+  border-bottom: 1px solid #de4e11;
+}
+.main_form {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  margin: 3em 0 2em 0;
+}
+input {
+  border: none;
+  border-radius: 9999px;
+  font-size: 2.2em;
+  padding: 0.4em;
+  outline: none;
+  text-align: center;
+  color: #f15412;
+}
+button {
+  display: flex;
+  justify-content: center;
+  gap: 0.7em;
+  border: none;
+  background-color: #f15412;
+  color: #ececec;
+  padding: 0.8em;
+  font-size: 1.4em;
+  align-items: center;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: #de4e11;
+}
+button:active {
+  background-color: #ececec;
+  color: #f15412;
+  border: 1px solid #f15412;
+}
+
+.task_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  transition: 0.3s linear;
+}
+.new_task_div {
+  display: none; /*flex*/
+  gap: 1em;
+  margin-bottom: 1em;
+  background-color: #d9d9d9;
+  padding: 1em;
+  border-radius: 9999px;
+  transition: 0.3s linear;
+}
+.completed_task {
+  text-decoration: line-through;
+  filter: saturate(0.4) !important;
+  transform: scale(0.9);
+  transition: 0.3s linear;
+}
+.new_task_div:hover,
+.completed_task:hover {
+  background-color: #bebebe;
+}
+.task_form input,
+.task_form button {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+#up_btn {
+  display: none;
+  font-size: 2.5em;
+  padding: 0.4em;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  transition: 0.3s ease;
+}
+span {
+  color: red;
+  font-size: 1.4em;
+  display: none;
+}
+span:hover {
+  text-decoration: underline;
+}

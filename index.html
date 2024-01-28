@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="src/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <h1>ToDo List</h1>
+    <section class="main_form" id="main_form">
+      <input
+        type="text"
+        id="usr_task_inp"
+        placeholder="Add a task ToDo!"
+        title="Add a task ToDo!"
+        value
+      />
+      <button type="button" id="add_btn" title="Add task">
+        <i class="fa-solid fa-plus"></i>
+        Add task
+      </button>
+      <button type="button" id="del_btn" title="Clear all tasks">
+        <i class="fa-solid fa-trash"></i>
+        Clear all tasks
+      </button>
+    </section>
+    <section class="task_form" id="task_form">
+      <div class="new_task_div active" id="active_task">
+        <input class="new_task_inp" id="new_task" value="Hello Task" readonly />
+        <button
+          type="button"
+          id="comp_btn"
+          class="comp_btn"
+          title="Mark as completed"
+        >
+          <i class="fa-solid fa-check"></i>
+          <!-- <i class="fa-solid fa-check-double"></i> -->
+          Mark as Completed
+        </button>
+      </div>
+    </section>
+    <button type="button" id="up_btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <span title="Data missing error">YOU CAN NOT TYPE AN EMPTY TASK</span>
+    <script src="main.js"></script>
+  </body>
+</html>
